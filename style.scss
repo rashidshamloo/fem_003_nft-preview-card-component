@@ -40,9 +40,6 @@ article {
     font-weight: 600;
     font-size: 1.35rem;
   }
-  .nft-image > img {
-    width: 100%;
-  }
   .nft-image {
     background-image: url("images/image-equilibrium.jpg");
     background-size: cover;
@@ -58,18 +55,18 @@ article {
     .nft-view {
       opacity: 0;
     }
-    img {
-      width: 48px;
-      height: auto;
-    }
     .nft-view::after {
       opacity: 0;
       z-index: -1;
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background-color: rgba($cyan, 0.5);
+      background-color: rgba($cyan, 0.3);
     }
+    img {
+      width: 48px;
+      height: auto;
+    }    
   }
   .nft-image:hover {
     .nft-view {
@@ -77,8 +74,8 @@ article {
       transition: 500ms;
     }
     .nft-view::after {
-      transition: 500ms;
       opacity: 1;
+      transition: 500ms;
     }
   }
   a {
@@ -126,17 +123,12 @@ article {
     height: 32px;
     border: 1px solid $white;
     background-image: url("images/image-avatar.png");
-    background-position: center;
     background-size: cover;
   }
   .creator {
     font-weight: 300;
     font-size: 1rem;
     margin-left: 20px;
-    mark {
-      background: none;
-      color: $white;
-    }
   }
   hr {
     border-width: 1px 0 0 0;

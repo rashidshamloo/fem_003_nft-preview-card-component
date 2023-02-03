@@ -32,9 +32,6 @@ article h1 {
   font-weight: 600;
   font-size: 1.35rem;
 }
-article .nft-image > img {
-  width: 100%;
-}
 article .nft-image {
   background-image: url("images/image-equilibrium.jpg");
   background-size: cover;
@@ -51,25 +48,25 @@ article .nft-image {
 article .nft-image .nft-view {
   opacity: 0;
 }
-article .nft-image img {
-  width: 48px;
-  height: auto;
-}
 article .nft-image .nft-view::after {
   opacity: 0;
   z-index: -1;
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 255, 247, 0.5);
+  background-color: rgba(0, 255, 247, 0.3);
+}
+article .nft-image img {
+  width: 48px;
+  height: auto;
 }
 article .nft-image:hover .nft-view {
   opacity: 1;
   transition: 500ms;
 }
 article .nft-image:hover .nft-view::after {
-  transition: 500ms;
   opacity: 1;
+  transition: 500ms;
 }
 article a {
   text-decoration: none;
@@ -116,17 +113,12 @@ article .avatar {
   height: 32px;
   border: 1px solid hsl(0deg, 0%, 100%);
   background-image: url("images/image-avatar.png");
-  background-position: center;
   background-size: cover;
 }
 article .creator {
   font-weight: 300;
   font-size: 1rem;
   margin-left: 20px;
-}
-article .creator mark {
-  background: none;
-  color: hsl(0deg, 0%, 100%);
 }
 article hr {
   border-width: 1px 0 0 0;
