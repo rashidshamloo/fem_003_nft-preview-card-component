@@ -11,6 +11,7 @@ body {
   background-color: hsl(217deg, 54%, 11%);
   color: hsl(215deg, 51%, 70%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -131,4 +132,24 @@ article hr {
   border-width: 1px 0 0 0;
   border-style: solid;
   border-color: hsl(215deg, 32%, 27%);
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer p {
+  color: hsl(215deg, 51%, 70%);
+  margin: 3px;
+}
+footer i {
+  font-size: 0.9rem;
+}
+footer a {
+  color: hsl(215deg, 51%, 70%);
+}
+footer a:hover {
+  color: hsl(178deg, 100%, 50%);
+  transition: 700ms;
 }/*# sourceMappingURL=style.css.map */

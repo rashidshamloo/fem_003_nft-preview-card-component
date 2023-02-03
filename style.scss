@@ -20,6 +20,7 @@ body {
   background-color: $mainBG;
   color: $softBlue;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -141,5 +142,24 @@ article {
     border-width: 1px 0 0 0;
     border-style: solid;
     border-color: $line;
+  }
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  p {
+    color: $softBlue;
+    margin: 3px;
+  }
+  i {
+    font-size: 0.9rem;
+  }
+  a {
+    color: $softBlue;
+  }
+  a:hover {
+    color: $cyan;
+    transition: 700ms;
   }
 }
